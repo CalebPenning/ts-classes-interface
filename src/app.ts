@@ -1,12 +1,21 @@
-class Department {
-    name: string
+interface Person {
+    name: string;
+    age: number;
 
-    constructor(name: string) {
-        this.name = name;
+    greet(phrase: string): void
+}
+
+let user1: Person 
+
+user1 = {
+    name: "Caleb",
+    age: 27,
+    greet(phrase: string) {
+        console.log(`${phrase} ${this.name}`)
     }
 }
 
+user1.greet("hello there, I am")
 
-const acctDept = new Department('Accounting')
 
-console.log(acctDept)
+console.log("yooooooooooooo")

@@ -109,6 +109,6 @@
     "**/*.dev.ts"
   ],
   "include": [
-    "src/app.ts"
+    "src/classes.ts"
   ]
 }
